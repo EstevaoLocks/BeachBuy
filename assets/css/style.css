@@ -9,16 +9,24 @@
     "GRAD" 0;
 }
 
-/* Nav */
+* {
+    box-sizing: border-box;
+}
 
+/* Nav */
 nav {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
 
+    position: fixed;
+    z-index: 100;
+
     background-color: #F7FFF7;
     height: 80px;
+    width: 100%;
+    padding: 0 16px 0 16px;
 
     color: #1A535C;
 }
@@ -48,4 +56,14 @@ nav {
     cursor: pointer;
 
     background-color: #3eb6ae;
+}
+
+/* Conteudo */
+main header {
+    width: 100%;
+    height: 902px;
+
+    background-image: url('./../img/SurfHero.png');
+    background-position: center;
+    background-size: cover;
 }
